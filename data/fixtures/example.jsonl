@@ -1,0 +1,1 @@
+{"case_id":"synthetic-001","domain":"example.com","page_url":"https://example.com/grievance","page_type":"grievance","expected":{"officer_name":null,"designation":"Grievance Team","email":"care@example.com","phone":null},"synthetic":true}

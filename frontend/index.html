@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b27">
+  <meta name="description" content="Review public grievance contacts with source-linked evidence and monitor policy page changes.">
+  <title>ReadyCheck — the proof behind the contact</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ReadyCheck home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.1L19 7"/></svg></span><span>readycheck<span class="brand-period">.</span></span></a>
+    <nav class="topnav" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#monitor-panel">Policy watch</a></nav>
+    <div class="topbar-actions"><span id="mode-pill" class="mode-pill"><span class="mode-dot"></span><span id="mode-short">Checking mode</span></span><a class="nav-cta" href="#audit-form">Run an audit <span aria-hidden="true">↗</span></a></div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner page-shell">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> PUBLIC INFORMATION, MADE CLEAR</div>
+          <h1>Find the right person.<br><span>Keep the proof.</span></h1>
+          <p class="hero-lead">Check a company’s public grievance contacts, see where each finding came from, and keep an eye on policy changes.</p>
+          <form id="audit-form" class="audit-form">
+            <label for="company">Company name<input id="company" name="company" maxlength="120" autocomplete="organization" placeholder="e.g. Sample Store" required></label>
+            <label for="domain">Official website<input id="domain" name="domain" inputmode="url" placeholder="example.com" required></label>
+            <button id="audit-button" class="button-primary" type="submit"><span>Check public contacts</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+          </form>
+          <div class="hero-footnote">
+            <span class="lock-icon" aria-hidden="true">⌑</span>
+            <span>Public pages only. Quick presets:</span>
+            <div class="preset-pills">
+              <button class="preset-btn" type="button" data-company="Meesho" data-domain="meesho.com">Meesho</button>
+              <button class="preset-btn" type="button" data-company="boAt Lifestyle" data-domain="boat-lifestyle.com">boAt</button>
+              <button class="preset-btn" type="button" data-company="Nykaa" data-domain="nykaa.com">Nykaa</button>
+              <button id="sample-button" class="preset-btn text-button" type="button" data-company="Sample Store" data-domain="example.com">Sample Store</button>
+            </div>
+          </div>
+          <p class="mode-note" id="mode-note" aria-live="polite">Checking whether this is demo or live mode…</p>
+        </div>
+        <div class="hero-preview" aria-label="Preview of a source-linked ReadyCheck result">
+          <div class="preview-orbit orbit-one" aria-hidden="true"></div><div class="preview-orbit orbit-two" aria-hidden="true"></div>
+          <div class="preview-card">
+            <div class="preview-topline"><span class="preview-label"><span class="preview-sparkle">✳</span> SAMPLE PREVIEW</span><span class="preview-fresh">ILLUSTRATIVE</span></div>
+            <div class="preview-company"><span class="company-monogram">S</span><div><strong>Sample Store</strong><small>example.com</small></div><span class="preview-check" aria-label="Example result">✓</span></div>
+            <div class="preview-divider"></div>
+            <div class="preview-result-label">GRIEVANCE CONTACT</div>
+            <div class="preview-contact"><div><small>EMAIL · EXAMPLE VALUE</small><strong>care@example.com</strong></div><span class="verified-chip"><i></i> SAMPLE MATCH</span></div>
+            <div class="preview-quote"><span class="quote-mark">“</span><p>For assistance, contact our grievance team at <b>care@example.com.</b></p><a href="#audit-form">See how evidence looks <span aria-hidden="true">↗</span></a></div>
+            <div class="preview-footer"><span><span class="tiny-shield">✓</span> Evidence example</span><span>Synthetic preview</span></div>
+          </div>
+          <div class="floating-note"><span class="note-icon">↗</span><span><b>Every finding</b><small>has a source to review</small></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom page-shell"><span>BUILT FOR HUMAN REVIEW</span><span class="hero-bottom-rule"></span><span>Research aid · Not a legal verdict</span></div>
+    </section>
+
+    <section class="trust-strip page-shell" aria-label="Product principles"><div><span class="trust-icon">01</span><span><b>Evidence first</b><small>Review the quote behind each field</small></span></div><div><span class="trust-icon">02</span><span><b>Uncertain stays uncertain</b><small>No source, no verified claim</small></span></div><div><span class="trust-icon">03</span><span><b>Public pages only</b><small>No personal order data required</small></span></div></section>
+
+    <section id="progress" class="progress-card hidden" aria-live="polite" aria-atomic="true">
+      <div class="progress-head">
+        <span class="spinner" aria-hidden="true"></span>
+        <div><b id="progress-title">Preparing audit…</b><p id="progress-detail">Checking public pages</p></div>
+      </div>
+      <span class="progress-track"><i></i></span>
+      <div class="agent-telemetry" id="agent-telemetry">
+        <div class="telemetry-bar">
+          <span class="telemetry-status-dot"></span>
+          <span class="telemetry-title">TINYFISH AGENT STREAM · LIVE TRACE</span>
+          <span class="telemetry-timer" id="telemetry-timer">0.0s</span>
+        </div>
+        <div class="telemetry-logs" id="telemetry-logs"></div>
+      </div>
+    </section>
+    <div id="error" class="error-banner hidden" role="alert"></div>
+    <section id="results" class="results-card page-shell hidden" aria-live="polite"></section>
+
+    <section id="how-it-works" class="how-section page-shell">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> A CLEARER WAY TO CHECK</p><h2>From company name<br>to <em>source-backed answer.</em></h2></div><p>ReadyCheck helps you locate public grievance information and review it in context. You stay in control of what to trust.</p></div>
+      <div class="steps-grid"><article class="step-card"><span class="step-number">01</span><div class="step-icon search-icon" aria-hidden="true">⌕</div><h3>Search the official site</h3><p>Enter a company and its official domain. ReadyCheck searches and reads public policy and contact pages.</p></article><article class="step-card"><span class="step-number">02</span><div class="step-icon evidence-icon" aria-hidden="true">“</div><h3>Review each finding</h3><p>Contact details appear with the source page and quote. Missing or unsupported information stays unclear.</p></article><article class="step-card"><span class="step-number">03</span><div class="step-icon watch-icon" aria-hidden="true">↻</div><h3>Watch for page changes</h3><p>Save a public page baseline and compare future versions. Review the before-and-after text yourself.</p></article></div>
+    </section>
+
+    <section id="monitor-panel" class="monitor-section page-shell">
+      <div class="monitor-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> SILENT POLICY-CHANGE DETECTOR</p><h2>Keep watch on the fine print.</h2><p>Save a baseline from an official page, then check it again or schedule daily/weekly checks. ReadyCheck flags a content change for review—it does not declare a violation.</p></div><div class="monitor-badge" aria-hidden="true"><span>↻</span><small>PAGE<br>WATCH</small></div></div>
+      <p id="monitor-disabled-note" class="monitor-status-note"></p>
+      <form id="monitor-form" class="monitor-form">
+        <label for="monitor-source">Official page<select id="monitor-source" required></select></label>
+        <label for="monitor-frequency">Check frequency<select id="monitor-frequency"><option value="manual">Manual check</option><option value="daily">Every day</option><option value="weekly">Every week</option></select></label>
+        <input id="monitor-company" type="hidden"><input id="monitor-domain" type="hidden">
+        <button id="monitor-add-button" class="button-primary" type="submit">Save page baseline <span aria-hidden="true">＋</span></button>
+      </form>
+      <p id="monitor-message" class="monitor-message" aria-live="polite"></p>
+      <div class="monitor-list-heading"><h3>Your watched pages</h3><button id="refresh-monitors" type="button" class="icon-button" aria-label="Refresh watched pages">↻</button></div>
+      <div id="monitor-list" class="monitor-list" aria-live="polite"><p class="empty-state">Loading your watched pages…</p></div>
+      <section id="monitor-history" class="monitor-history hidden" aria-live="polite"></section>
+    </section>
+
+    <section class="draft-section page-shell">
+      <div class="draft-intro"><p class="eyebrow"><span class="eyebrow-line"></span> WHEN YOU’RE READY TO WRITE</p><h2>A calmer first draft.</h2><p>Turn your notes into a clear request. Edit every line before you use it.</p><div class="draft-disclaimer"><span>i</span> ReadyCheck does not send this message for you.</div></div>
+      <div class="draft-workspace"><form id="draft-form" class="draft-form"><label for="issue">What happened?<textarea id="issue" required minlength="3" maxlength="3000" placeholder="Describe the issue with dates or order reference if relevant."></textarea></label><label for="resolution">What would resolve it?<input id="resolution" required maxlength="1000" placeholder="e.g. Refund for the returned item"></label><button class="button-secondary" type="submit">Create editable draft <span aria-hidden="true">↗</span></button></form><div class="draft-output-wrap"><label for="draft-output" class="output-label">YOUR DRAFT <span>EDITABLE</span></label><textarea id="draft-output" class="draft-output hidden" aria-label="Generated editable complaint draft" placeholder="Your draft will appear here. You can edit it before copying."></textarea><div class="draft-output-empty" id="draft-empty"><span>✎</span><p>Your draft will appear here.<br>It’s yours to edit.</p></div><div class="draft-controls"><button id="copy-draft" type="button" class="copy-button hidden">Copy draft <span aria-hidden="true">▣</span></button><span id="draft-message" class="draft-message" aria-live="polite"></span></div></div></div>
+    </section>
+
+    <section class="closing-note page-shell"><span class="closing-mark" aria-hidden="true">✓</span><p><b>Built to help you ask a better question.</b><br>Use ReadyCheck as a starting point. Review the original source and decide what to do next.</p><span class="closing-caption">HUMAN JUDGMENT STAYS IN THE LOOP</span></section>
+  </main>
+
+  <footer class="footer page-shell"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.1L19 7"/></svg></span><span>readycheck<span class="brand-period">.</span></span></a><p>Research aid only. Not legal advice or a compliance certification.</p><a href="#top">Back to top ↑</a></footer>
+
+  <div id="dossier-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="dossier-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-seal">
+          <span class="seal-icon">⚖️</span>
+          <div>
+            <h3 id="dossier-title">Official Evidence Dossier</h3>
+            <small>CONSUMER PROTECTION (E-COMMERCE) RULES COMPLIANCE AUDIT</small>
+          </div>
+        </div>
+        <button id="close-dossier" type="button" class="close-btn" aria-label="Close dossier">✕</button>
+      </div>
+      <div class="modal-body" id="dossier-content"></div>
+      <div class="modal-footer">
+        <button id="print-dossier" class="button-primary" type="button">Print / Save as PDF ⎙</button>
+        <button id="dismiss-dossier" class="button-secondary" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

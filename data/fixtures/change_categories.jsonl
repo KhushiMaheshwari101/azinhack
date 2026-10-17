@@ -1,0 +1,25 @@
+{"id":"change-001","text":"Previous: Email: help@example.com. Updated: Email: grievance@example.com.","label":"contact_details","synthetic":true}
+{"id":"change-002","text":"Previous: Phone: 1800-111-222. Updated: Phone: 1800-333-444.","label":"contact_details","synthetic":true}
+{"id":"change-003","text":"Previous: Contact number 9876543210. Updated: Contact number 9876501234.","label":"contact_details","synthetic":true}
+{"id":"change-004","text":"Previous: Email support at company. Updated: Helpline and email contact details are listed.","label":"contact_details","synthetic":true}
+{"id":"change-005","text":"Previous: Telephone support is available. Updated: Mobile contact number is now provided.","label":"contact_details","synthetic":true}
+{"id":"change-006","text":"Previous: Grievance Officer: Asha Rao. Updated: Grievance Officer: Neha Shah.","label":"officer_details","synthetic":true}
+{"id":"change-007","text":"Previous: Nodal Officer details. Updated: Customer Grievance Officer details.","label":"officer_details","synthetic":true}
+{"id":"change-008","text":"Previous: Designation: Manager. Updated: Designation: Senior Manager.","label":"officer_details","synthetic":true}
+{"id":"change-009","text":"Previous: Officer name is listed. Updated: The grievance redressal officer name changed.","label":"officer_details","synthetic":true}
+{"id":"change-010","text":"Previous: The nodal officer handles escalation. Updated: The grievance officer handles escalation.","label":"officer_details","synthetic":true}
+{"id":"change-011","text":"Previous: We reply within 48 hours. Updated: We reply within 72 hours.","label":"response_timeline","synthetic":true}
+{"id":"change-012","text":"Previous: Resolution in 7 days. Updated: Resolution in 10 days.","label":"response_timeline","synthetic":true}
+{"id":"change-013","text":"Previous: Acknowledgement within two days. Updated: Acknowledgement within one day.","label":"response_timeline","synthetic":true}
+{"id":"change-014","text":"Previous: Redressal timeline is one week. Updated: Redressal timeline is two weeks.","label":"response_timeline","synthetic":true}
+{"id":"change-015","text":"Previous: Response expected within a month. Updated: Response expected within fifteen days.","label":"response_timeline","synthetic":true}
+{"id":"change-016","text":"Previous: Submit complaint by email. Updated: Submit complaint through the grievance portal.","label":"complaint_process","synthetic":true}
+{"id":"change-017","text":"Previous: Refund requests use the standard process. Updated: Escalate unresolved refund complaints.","label":"complaint_process","synthetic":true}
+{"id":"change-018","text":"Previous: Raise a grievance with customer care. Updated: Complaint resolution has an additional escalation step.","label":"complaint_process","synthetic":true}
+{"id":"change-019","text":"Previous: Complaints can be submitted online. Updated: Grievance complaints can also be submitted by post.","label":"complaint_process","synthetic":true}
+{"id":"change-020","text":"Previous: Return complaint process. Updated: The complaint process now includes an appeal.","label":"complaint_process","synthetic":true}
+{"id":"change-021","text":"Previous: Our website has a blue banner. Updated: The header banner is now green.","label":"other_content","synthetic":true}
+{"id":"change-022","text":"Previous: The page title uses version one. Updated: The page title uses version two.","label":"other_content","synthetic":true}
+{"id":"change-023","text":"Previous: We describe our company history. Updated: We added a paragraph about our founding.","label":"other_content","synthetic":true}
+{"id":"change-024","text":"Previous: The product image appears on the page. Updated: A new product image appears on the page.","label":"other_content","synthetic":true}
+{"id":"change-025","text":"Previous: Footer copyright 2025. Updated: Footer copyright 2026.","label":"other_content","synthetic":true}
