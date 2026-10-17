@@ -7,6 +7,8 @@
 
 > **Evidence-First E-Commerce Compliance & Dark-Pattern Watchdog for India's 500M+ Online Shoppers.**  
 > Built for **AZINHACK ’26** at the University School of Automation & Robotics (USAR), GGSIPU East Delhi Campus.
+> 
+CHECK IT OUT  https://azinhack.onrender.com/
 
 ---
 
